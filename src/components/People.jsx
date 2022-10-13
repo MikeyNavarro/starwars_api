@@ -12,7 +12,7 @@ const People = () => {
       .get(`https://swapi.dev/api/people/${id}`)
       .then((res) => setData(res.data))
       .catch((error) => console.log(error));
-  }, []);
+  });
 
   console.log(data);
 
